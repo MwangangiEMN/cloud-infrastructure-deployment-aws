@@ -23,3 +23,8 @@ Used SSH to connect to the instance securely from a terminal.
 Example command:
 ```bash
 ssh -i key.pem ubuntu@your-ec2-public-ip
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
