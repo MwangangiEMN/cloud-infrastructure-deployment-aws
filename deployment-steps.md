@@ -6,11 +6,11 @@ This document outlines the steps used to deploy a simple application environment
 ---
 
 ## Step 1: Launch an EC2 Instance
-- Logged into AWS Management Console  
-- Navigated to EC2 dashboard  
-- Created a new EC2 instance  
-- Selected Ubuntu as the operating system  
-- Created or selected an SSH key pair  
+- Logged into AWS Management Console
+- Navigated to EC2 dashboard
+- Created a new EC2 instance
+- Selected Ubuntu as the operating system
+- Created or selected an SSH key pair
 - Allowed inbound traffic for:
   - SSH (Port 22)
   - HTTP (Port 80)
@@ -19,39 +19,25 @@ This document outlines the steps used to deploy a simple application environment
 
 ## Step 2: Connect to the EC2 Instance
 
-Used SSH to connect to the instance securely from a terminal.
+## Deployment Commands (Terminal Execution)
 
-Example command:
+These commands were executed sequentially in a Linux-based EC2 environment.
 ```bash
+# Connect to EC2 instance
 ssh -i key.pem ubuntu@your-ec2-public-ip
 
-```markdown
-## Step 3: Update the Server
-
-Updated package lists and system packages.
-
-```bash
+# Update system packages
 sudo apt update
 sudo apt upgrade -y
 
----
-
-
-```markdown
-## Step 4: Install Web Server
-
-Installed Nginx to host the web application.
-
-```bash
+# Install Nginx web server
 sudo apt install nginx -y
 
----
-
-```markdown
-## Step 5: Start Web Server
-
-Started and enabled Nginx service.
-
-```bash
+# Start Nginx service
 sudo systemctl start nginx
+
+# Enable Nginx to start on boot
 sudo systemctl enable nginx
+
+# Check status of Nginx
+sudo systemctl status nginx
