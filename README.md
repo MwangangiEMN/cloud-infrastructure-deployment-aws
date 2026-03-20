@@ -1,61 +1,73 @@
-# cloud-infrastructure-deployment-aws
-AWS cloud infrastructure project demonstrating deployment, networking, security, and monitoring
 # Cloud Infrastructure Deployment on AWS
 
 ## Overview
-This project demonstrates the design and deployment of cloud infrastructure using Amazon Web Services (AWS). It is focused on hosting a web application securely and efficiently while applying core cloud engineering principles such as networking, access control, monitoring, and scalability.
+This project demonstrates the deployment of a web server on Amazon Web Services (AWS) using core cloud engineering principles. It showcases the setup of compute resources, networking, security configurations, and monitoring within a Linux-based environment.
 
-The project is designed to reflect real-world cloud deployment practices and demonstrate practical understanding of AWS services commonly used in infrastructure and DevOps environments.
+The project focuses on practical, hands-on implementation of cloud infrastructure to simulate real-world deployment scenarios.
 
 ---
 
 ## Objectives
-- Design a cloud-based infrastructure for hosting an application  
-- Configure secure access and identity management  
-- Apply networking concepts such as VPCs, subnets, and security groups  
-- Implement monitoring and logging  
-- Demonstrate scalable and production-oriented cloud thinking  
+- Deploy a web server on AWS EC2  
+- Configure secure remote access using SSH  
+- Implement basic networking and security controls  
+- Set up cloud storage using Amazon S3  
+- Monitor system performance using AWS CloudWatch  
+- Document deployment processes clearly and professionally  
 
 ---
 
-## AWS Services Covered
-- **EC2** – Compute for hosting the application  
-- **S3** – Storage for static files and assets  
-- **IAM** – Identity and access management  
-- **VPC** – Network isolation and connectivity  
-- **Security Groups** – Traffic control and access rules  
-- **CloudWatch** – Monitoring and logging  
+## AWS Services Used
+- **EC2** – Hosting the web server  
+- **S3** – Storage for project assets  
+- **IAM** – Access control and permissions  
+- **Security Groups** – Network traffic management  
+- **CloudWatch** – Monitoring and performance tracking  
 
 ---
 
-## Project Scope
-This project focuses on:
-- infrastructure design  
-- deployment planning  
-- secure access management  
-- network design  
-- monitoring strategy  
-- documentation of deployment steps  
+## Deployment Summary
+The infrastructure was deployed on a Linux-based EC2 instance and configured using terminal commands.
+
+Key actions performed:
+- Connected to EC2 via SSH  
+- Updated system packages  
+- Installed and configured Nginx web server  
+- Enabled and verified web server operation  
+- Configured security group rules (SSH and HTTP)  
+- Created and reviewed S3 storage  
+- Monitored instance performance using CloudWatch  
 
 ---
 
-## Skills Demonstrated
-- Cloud infrastructure design  
-- AWS service configuration  
-- Networking and access control  
-- Monitoring and logging concepts  
-- Technical documentation  
-- Scalable architecture thinking  
+## 🔍 Key Outcomes
+- Successfully deployed a web server on AWS EC2  
+- Configured secure remote access and system updates  
+- Installed and managed a production-ready web server (Nginx)  
+- Applied networking rules through security groups  
+- Demonstrated understanding of cloud storage and monitoring  
+- Documented deployment steps for reproducibility  
 
 ---
 
-## Repository Contents
-- `README.md` – project summary and scope  
-- `architecture.md` – system design and architecture explanation  
-- `deployment-steps.md` – deployment workflow and setup steps  
-- `screenshots/` – visual evidence of AWS components and setup  
+## 🚀 What This Project Demonstrates
+This project highlights practical experience with:
+
+- Cloud infrastructure provisioning (AWS EC2)  
+- Linux server administration  
+- Web server deployment and configuration  
+- Basic cloud security and networking  
+- Monitoring and system performance tracking  
+
+---
+
+## Repository Structure
+- `README.md` – Project overview  
+- `architecture.md` – System design explanation  
+- `deployment-steps.md` – Step-by-step deployment process  
+- `screenshots/` – (optional) visual references  
 
 ---
 
 ## Outcome
-This project demonstrates practical cloud engineering knowledge and the ability to design, document, and explain AWS-based infrastructure suitable for hosting modern applications.
+This project demonstrates hands-on experience in deploying and managing cloud infrastructure on AWS. It reflects the ability to work with real cloud environments, configure services, and document solutions in a structured and professional manner.
